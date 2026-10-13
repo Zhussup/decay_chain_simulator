@@ -5,11 +5,10 @@ namespace decay {
 
 std::string humanTime(double seconds) {
     char buf[64];
-    if (seconds < 1.0) {
-        std::snprintf(buf, sizeof buf, "%.2g s", seconds);
-        return buf;
-    }
-    if (seconds < 60.0)      { std::snprintf(buf, sizeof buf, "%.1f s",   seconds); return buf; }
+    if (seconds < 1e-6) { std::snprintf(buf, sizeof buf, "%.2g ns", seconds * 1e9); return buf; }
+    if (seconds < 1e-3) { std::snprintf(buf, sizeof buf, "%.3g µs", seconds * 1e6); return buf; }
+    if (seconds < 1.0)  { std::snprintf(buf, sizeof buf, "%.3g ms", seconds * 1e3); return buf; }
+    if (seconds < 60.0) { std::snprintf(buf, sizeof buf, "%.2g s",  seconds); return buf; }
     if (seconds < 3600.0)    { std::snprintf(buf, sizeof buf, "%.1f min", seconds / 60.0); return buf; }
     if (seconds < 86400.0)   { std::snprintf(buf, sizeof buf, "%.1f h",   seconds / 3600.0); return buf; }
     if (seconds < 31557600.0){ std::snprintf(buf, sizeof buf, "%.1f d",   seconds / 86400.0); return buf; }

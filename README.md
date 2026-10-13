@@ -9,6 +9,8 @@ accelerator ×10^N** (a dial up to ×10^18): the event-driven MC is built so tha
 chain stiffness (U-238 lives for 4.5 billion years while its daughters decay
 in fractions of a second) slows down neither the simulation nor the visuals.
 
+![Decay Chain Simulator: U-238 chain at x10^16 time acceleration](screenshots/main.png)
+
 ## Running
 
 ```bash

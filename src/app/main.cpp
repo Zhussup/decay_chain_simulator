@@ -139,12 +139,13 @@ int main(int argc, char** argv) {
         glfwGetFramebufferSize(win, &fbW, &fbH);
         const float dpi = std::clamp(float(fbH) / 900.0f, 1.0f, 2.5f);
         static const ImWchar ranges[] = {
-            0x0020, 0x007E,  // латиница
+            0x0020, 0x007E,  // Basic Latin
+            0x00B5, 0x00B5,  // micro sign (µs)
             0x00D7, 0x00D7,  // ×
             0x00F7, 0x00F7,  // ÷
-            0x0391, 0x03C9,  // греческие (α, β, γ)
-            0x0400, 0x045F,  // кириллица + ё
-            0x2116, 0x2116,  // №
+            0x0391, 0x03C9,  // Greek (alpha, beta, gamma)
+            0x0400, 0x045F,  // Cyrillic
+            0x2116, 0x2116,  // numero sign
             0
         };
         const char* fontPaths[] = {
