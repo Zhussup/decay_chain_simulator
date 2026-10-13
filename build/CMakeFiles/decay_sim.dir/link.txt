@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/decay_sim.dir/link.d CMakeFiles/decay_sim.dir/src/app/main.cpp.o CMakeFiles/decay_sim.dir/src/gfx/Renderer.cpp.o CMakeFiles/decay_sim.dir/src/ui/Ui.cpp.o -o decay_sim  libdecay_core.a libimgui.a libglad.a /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libglfw.so

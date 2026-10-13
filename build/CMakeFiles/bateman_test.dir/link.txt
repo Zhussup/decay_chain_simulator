@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/bateman_test.dir/link.d CMakeFiles/bateman_test.dir/tests/test_bateman.cpp.o -o bateman_test  libdecay_core.a

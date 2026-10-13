@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdecay_core.a CMakeFiles/decay_core.dir/src/core/Chains.cpp.o CMakeFiles/decay_core.dir/src/core/BatemanAnalytic.cpp.o CMakeFiles/decay_core.dir/src/core/DecaySim.cpp.o CMakeFiles/decay_core.dir/src/core/Util.cpp.o
+/usr/bin/ranlib libdecay_core.a
