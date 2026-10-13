@@ -94,3 +94,12 @@ atoms — MC noise — and points with poor analytic conditioning).
 2. Port the MC to a compute shader (same PCG32, per-atom state 1:1) —
    10^7–10^8 atoms in real time.
 3. Branching / atom history: a particle's path highlighted along the chain.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Third-party
+libraries vendored in `external/` keep their own licenses: ImGui — MIT
+(`external/imgui/LICENSE.txt`); glad (generated loader) — see the SPDX header
+in `external/glad/src/gl.c`; Khronos platform header — its own permissive
+notice (`external/glad/include/KHR/khrplatform.h`); GLM —
+`external/glm/copying.txt`.
